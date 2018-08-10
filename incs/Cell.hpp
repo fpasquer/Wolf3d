@@ -2,6 +2,7 @@
 # define CELL_HPP
 
 # include <iostream>
+# include <vector>
 # include "Coord.hpp"
 
 class Cell : public Coord
@@ -17,14 +18,16 @@ class Cell : public Coord
 			Cell::Val		val;
 			char			c;
 		}					t_val_char;
-		static t_val_char const
-							VAL_CHAR[];
+		static std::vector<t_val_char> const
+							VAL_CHAR;
 							Cell(unsigned int const y, unsigned int const x);
+		static int const	DISTANCE_SCREEN;
+		static int const	HEIGHT_WALL;
+		static int const	WIDTH_PIX_CELL;
+		static int const	DEPTH_PIX_CELL;
 		bool				set_val(char const val);
 		char				get_val(void) const;
 	private:
-		static unsigned int const
-							NB_VAL_CHAR;
 		Cell::Val			m_val;
 		char				m_c;
 };

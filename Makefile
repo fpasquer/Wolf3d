@@ -1,6 +1,6 @@
 NAME = wolf
 
-SRC_NAME = $(sort main.cpp Coord.cpp Map.cpp Exception_Map.cpp Cell.cpp)
+SRC_NAME = $(sort main.cpp Calculs.cpp Coord.cpp Map.cpp Exception_Map.cpp Cell.cpp)
 
 SRC_PATH = ./srcs/
 OBJ_PATH = ./objs/
